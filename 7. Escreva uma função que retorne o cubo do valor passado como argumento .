@@ -1,0 +1,20 @@
+/****************************************************************************************************************
+
+Arthur PetenC#o de Oliveira - RA 8137050
+
+2B:sem Ciencia da computacao - 05/04/2023
+
+7. Escreva uma função que retorne o cubo do valor passado como argumento . 
+
+****************************************************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+    printf("\n\nO cubo do numero digitado é %d",num*num*num);
+
+    return 0;
+}
