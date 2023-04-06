@@ -1,0 +1,22 @@
+/****************************************************************************************************************
+
+Arthur PetenC#o de Oliveira - RA 8137050
+
+2B:sem Ciencia da computacao - 05/04/2023
+
+6. Escreva um programa que implemente uma função que passe dado número inteiro como parâmetro,
+e este desenhe um número equivalente a “*” na tela.  
+
+****************************************************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+    for(int i=0;i<num;i++){
+        printf("*");
+    }
+    return 0;
+}
