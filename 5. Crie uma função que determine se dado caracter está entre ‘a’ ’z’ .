@@ -1,0 +1,29 @@
+/****************************************************************************************************************
+
+Arthur PetenC#o de Oliveira - RA 8137050
+
+2B:sem Ciencia da computacao - 05/04/2023
+
+5. Crie uma função que determine se dado caracter está entre ‘a’ ’z’ . 
+
+****************************************************************************************************************/
+#include <stdio.h>
+char c;
+int is_between_a_and_z(char c) {
+    if(c >= 'a' && c <= 'z') {
+        return 1; // true
+    } else {
+        return 0; // false
+    }
+}
+
+int main() {
+    printf("digite algo e te direi se esta entre a e z minusculo: ");
+    scanf("%c", &c);
+    if(is_between_a_and_z(c)) {
+        printf("O caractere %c está entre 'a' e 'z'\n", c);
+    } else {
+        printf("O caractere %c não está entre 'a' e 'z'\n", c);
+    }
+    return 0;
+}
