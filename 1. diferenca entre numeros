@@ -1,0 +1,32 @@
+/******************************************************************************
+
+Arthur Petenão de Oliveira - RA 8137050
+
+2ºsem Ciencia da computacao - 05/04/2023
+
+Exercicio 1 Escreva um programa que implemente uma função que retorne a diferença
+entre dois números inteiros digitados pelo usuário.  
+
+*******************************************************************************/
+#include <stdio.h>
+int RecebeNumero(){
+    int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+    return num;
+}
+
+int main()
+{
+    int A = RecebeNumero();
+    int B = RecebeNumero();
+    if(A>B)
+        printf("A diferença entre os numeros digitados é de: ");
+    if(B>A)
+        printf("A diferença entre os numeros digitados é de: %d", B-A);  
+    else
+        printf("Nao ha diferença entre os numeros digitados");
+    return 0;
+}
+
+
