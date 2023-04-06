@@ -1,0 +1,36 @@
+/******************************************************************************
+
+Arthur Petenão de Oliveira - RA 8137050
+
+2ºsem Ciencia da computacao - 05/04/2023
+
+3. Escreva um programa que calcule a área de um círculo a partir de uma função
+especialmente desenhada para isso;
+essa função recebe o valor do raio e retorna a área do círculo.  .  
+
+*******************************************************************************/
+#include <stdio.h>
+float calculaarea(int raio){
+    float a;
+    a = raio* raio * 3.14;
+    return a;
+}
+int main()
+{
+    int raio;
+    int valido = 0;
+    while (valido ==0){
+    printf("Digite o raio da sua circunferencia: ");
+    scanf("%d", &raio);
+    if (raio < 0)
+       printf("\nDistancias sao maiores que zero\n\n"); 
+    else if (raio == 0)
+       printf("\nDistancia igual a zero, logo nao ha circunferencia\n\n");  
+    else
+        valido = 1;
+    }
+    float area = calculaarea(raio);
+    printf("A area é: %.2f", area);
+    return 0;
+}
+
