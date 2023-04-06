@@ -1,0 +1,30 @@
+/******************************************************************************
+
+Arthur Petenão de Oliveira - RA 8137050
+
+2ºsem Ciencia da computacao - 05/04/2023
+
+2. Escreva uma função que retorne a divisão entre dois números inteiros.
+Atenção para a questão da divisão por zero! A divisão não pode ocorrer se o divisor for zero.   
+
+*******************************************************************************/
+#include <stdio.h>
+
+  
+int main()
+{
+    float A;
+    float B=0;
+    printf("Digite o numero a ser dividido: ");
+    scanf("%f", &A);
+    while(B == 0){
+    printf("\nDigite o numero que deseja: ");
+    scanf("%f", &B);
+    if(B==0)
+        printf("\n ERRO: nao é possiver dividir por zero, tente novamente\n");
+    }
+    printf("Resultado: %.2f", A/B);
+
+    return 0;
+}
+
